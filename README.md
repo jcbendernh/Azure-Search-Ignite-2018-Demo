@@ -33,11 +33,11 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
 		<li>Under Enter Request URL add the following...  <b>https://YOUR-SEARCH-SERVICE-NAME.search.windows.net/indexes?api-version=2019-05-06</b>.</li>
 		<li>Under Headers add the following values...</li>
 	  		<ol>
-				<li>Line 1 - KEY = <b>Content-Type</b> | VALUE = <b>application/json</b></li>
-				<li>Line 2 - KEY = <b>api-key</b> | VALUE = <b>YOUR-ADMIN-API-KEY</b><br>
-![Alt text](/imgs/POSTdatasourceheader.gif?raw=true)
-				</li>
+				<li> Line 1 - KEY = <b>Content-Type</b> | VALUE = <b>application/json</b> </li>
+				<li> Line 2 - KEY = <b>api-key</b> | VALUE = <b>YOUR-ADMIN-API-KEY</b> </li>
 			</ol>
+![Alt text](/imgs/POSTdatasourceheader.gif?raw=true)
+
 		<li>Under Body add the content from the <a target="_blank" href="https://github.com/jcbendernh/Azure-Search-Ignite-2018-Demo/blob/master/JSON/1-POST%20datasource.json">1-POST datasource.json</a> file and change the values on lines 2,7 &amp; 10.<br>
 
 ![Alt text](/imgs/POSTdatasourcebody.gif?raw=true)
