@@ -26,7 +26,7 @@ However, this does not account for large documents that need to be indexed so I 
 My instructions below are based on the <a target="_blank" href="https://docs.microsoft.com/en-us/azure/search/search-fiddler">Quickstart: Explore Azure Search REST APIs using Postman</a>.
 
 <ol start="6">
-  <li>First we need to obtain the key and URL of our Search Service.  Follow the steps in the <b>Get a key and URL</b> section at https://docs.microsoft.com/en-us/azure/search/search-fiddler#get-a-key-and-url.</li>
+<li>First we need to obtain the key and URL of our Search Service.  Follow the steps in the <b>Get a key and URL</b> section at https://docs.microsoft.com/en-us/azure/search/search-fiddler#get-a-key-and-url. </li>
   <li>Open Postman and click <b>+New | Request</b>.  Under Request name type <b>POST data source</b> and create a custom collection/folder to add it to.</li>
 	<ol>
 		<li>Change GET to POST</li>
@@ -34,16 +34,17 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
 		<li>Under Headers add the following values...</li>
 	  		<ol>
 				<li> Line 1 - KEY = <b>Content-Type</b> | VALUE = <b>application/json</b> </li>
-				<li> Line 2 - KEY = <b>api-key</b> | VALUE = <b>YOUR-ADMIN-API-KEY</b> </li>
-			</ol>
+				<li> Line 2 - KEY = <b>api-key</b> | VALUE = <b>YOUR-ADMIN-API-KEY</b><br> 
 ![Alt text](/imgs/POSTdatasourceheader.gif?raw=true)
-
+				</li>
+			</ol>
 		<li>Under Body add the content from the <a target="_blank" href="https://github.com/jcbendernh/Azure-Search-Ignite-2018-Demo/blob/master/JSON/1-POST%20datasource.json">1-POST datasource.json</a> file and change the values on lines 2,7 &amp; 10.<br>
 
 ![Alt text](/imgs/POSTdatasourcebody.gif?raw=true)
 		</li>
 		<li>Click Send and you should see the properties of your new data source under the Response section of Postman.</li>
 	</ol>
+  </li>
   <li></li>
   <li></li>
   <li></li>
@@ -51,5 +52,4 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
   <li></li>
   <li></li>
   <li></li>
-
 </ol>
