@@ -28,14 +28,13 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
 <ol start="6">
   <li>First we need to obtain the key and URL of our Search Service.  Follow the steps in the <b>Get a key and URL</b> section at https://docs.microsoft.com/en-us/azure/search/search-fiddler#get-a-key-and-url.</li>
   <li>Open Postman and click <b>+New | Request</b>.  Under Request name type <b>POST data source</b> and create a custom collection/folder to add it to.</li>
-	<ol type="a">
+	<ol>
 		<li>Change GET to POST</li>
 		<li>Under Enter Request URL add the following...  <b>https://YOUR-SEARCH-SERVICE-NAME.search.windows.net/indexes?api-version=2019-05-06</b>.</li>
 		<li>Under Headers add the following values...</li>
-	  		<ol type="i">
+	  		<ol>
 				<li>Line 1 - KEY = <b>Content-Type</b> | VALUE = <b>application/json</b></li>
 				<li>Line 2 - KEY = <b>api-key</b> | VALUE = <b>YOUR-ADMIN-API-KEY</b></li>
-
 			</ol>
 		<li>Under Body add the body from the <a target="_blank" href="https://github.com/jcbendernh/Azure-Search-Ignite-2018-Demo/blob/master/JSON/1-POST%20datasource.json"?1-POST datasource.json</a> file and change the values on lines 2,7 &amp; 10.</li>
 		<li>Click Send and you should see the properties of your new data source under the Response section of Postman.</li>
