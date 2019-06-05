@@ -1,0 +1,47 @@
+{
+  "name": "<name your indexer>",
+  "description": null,
+  "dataSourceName": "<your datasource name>",
+  "skillsetName": "<your skillset name>",
+  "targetIndexName": "<your index name>",
+  "disabled": null,
+  "schedule": null,
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": null,
+    "maxFailedItemsPerBatch": null,
+    "base64EncodeKeys": false,
+    "configuration": {
+      "imageAction": "generateNormalizedImages",
+      "dataToExtract": "contentAndMetadata",
+      "indexStorageMetadataOnlyForOversizedDocuments": true
+    }
+  },
+  "fieldMappings": [
+    {
+      "sourceFieldName": "metadata_storage_path",
+      "targetFieldName": "metadata_storage_path",
+      "mappingFunction": {
+        "name": "base64Encode",
+        "parameters": null
+      }
+    }
+  ],
+  "outputFieldMappings": [
+    {
+      "sourceFieldName": "/document/merged_content",
+      "targetFieldName": "merged_content",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "/document/normalized_images/*/text",
+      "targetFieldName": "text",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "/document/normalized_images/*/layoutText",
+      "targetFieldName": "layoutText",
+      "mappingFunction": null
+    }
+  ]
+}

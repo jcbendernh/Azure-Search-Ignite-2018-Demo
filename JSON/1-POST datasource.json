@@ -1,0 +1,16 @@
+{
+  "name": "<name your datasource>",
+  "description": "",
+  "type": "azureblob",
+  "subtype": null,
+  "credentials": {
+    "connectionString": "<insert connection string to storage account here>"
+  },
+  "container": {
+    "name": "<insert container name here>",
+    "query": null
+  },
+  "dataChangeDetectionPolicy": null,
+  "dataDeletionDetectionPolicy": null
+
+} 

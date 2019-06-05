@@ -1,0 +1,9 @@
+{
+  "type": "azureblob",
+  "credentials": {
+    "connectionString": "storage_connection_string"
+  },
+  "container": {
+    "name": "storage_container"
+  }
+}

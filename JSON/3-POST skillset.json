@@ -1,0 +1,77 @@
+{
+  "name": "<name your skillset>",
+  "description": "basic skillset",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.MergeSkill",
+      "name": "#1",
+      "description": null,
+      "context": "/document",
+      "insertPreTag": " ",
+      "insertPostTag": " ",
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/content",
+          "sourceContext": null,
+          "inputs": []
+        },
+        {
+          "name": "itemsToInsert",
+          "source": "/document/normalized_images/*/text",
+          "sourceContext": null,
+          "inputs": []
+        },
+        {
+          "name": "offsets",
+          "source": "/document/normalized_images/*/contentOffset",
+          "sourceContext": null,
+          "inputs": []
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mergedText",
+          "targetName": "merged_content"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Vision.OcrSkill",
+      "name": "#2",
+      "description": null,
+      "context": "/document/normalized_images/*",
+      "textExtractionAlgorithm": "printed",
+      "lineEnding": "Space",
+      "defaultLanguageCode": "en",
+      "detectOrientation": true,
+      "inputs": [
+        {
+          "name": "image",
+          "source": "/document/normalized_images/*",
+          "sourceContext": null,
+          "inputs": []
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "targetName": "text"
+        },
+        {
+          "name": "layoutText",
+          "targetName": "layoutText"
+        }
+      ]
+    }
+  ],
+  "cognitiveServices": {
+    "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+    "description": "<Insert Your Cognitive Services Resource ID - Properties Blade on Cognitive Services>",
+    "key": "<Insert Your Cognitive Services Key 1> "
+  }
+}
+    
+
+   
+
