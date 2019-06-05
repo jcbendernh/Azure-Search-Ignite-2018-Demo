@@ -34,11 +34,13 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
 		<li>Under Headers add the following values...</li>
 	  		<ol>
 				<li>Line 1 - KEY = <b>Content-Type</b> | VALUE = <b>application/json</b></li>
-				<li>Line 2 - KEY = <b>api-key</b> | VALUE = <b>YOUR-ADMIN-API-KEY</b></li>
+				<li>Line 2 - KEY = <b>api-key</b> | VALUE = <b>YOUR-ADMIN-API-KEY</b><br>
+![Alt text](/imgs/POSTdatasourceheader.gif?raw=true)
+				</li>
 			</ol>
 		<li>Under Body add the content from the <a target="_blank" href="https://github.com/jcbendernh/Azure-Search-Ignite-2018-Demo/blob/master/JSON/1-POST%20datasource.json">1-POST datasource.json</a> file and change the values on lines 2,7 &amp; 10.<br>
 
-![Alt text](/imgs/POSTdatasourceheader.gif?raw=true)
+![Alt text](/imgs/POSTdatasourcebody.gif?raw=true)
 		</li>
 		<li>Click Send and you should see the properties of your new data source under the Response section of Postman.</li>
 	</ol>
