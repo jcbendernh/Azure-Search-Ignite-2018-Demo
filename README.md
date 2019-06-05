@@ -38,7 +38,7 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
 			</ol>
 		<li>Under Body add the content from the <a target="_blank" href="https://github.com/jcbendernh/Azure-Search-Ignite-2018-Demo/blob/master/JSON/1-POST%20datasource.json">1-POST datasource.json</a> file and change the values on lines 2,7 &amp; 10.<br>
 
-![Alt text](/imgs/POST datasource header.gif?raw=true "POST Index Header")
+![Alt text](/imgs/POST datasource header.gif?raw=true)
 		</li>
 		<li>Click Send and you should see the properties of your new data source under the Response section of Postman.</li>
 	</ol>
