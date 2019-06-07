@@ -46,7 +46,7 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
 		<li>Click Send and you should see the properties of your new data source under the Response section of Postman.</li>
 	</ol>
   </li>
-    <li>Click <b>+New | Request</b>.  Under Request name type <b>POST index</b> and add it to your new custom collection/folder.</li>
+    <li>Click <b>+New | Request</b>, under Request name type <b>POST index</b> and add it to your new custom collection/folder.</li>
 	<ol>
 		<li>Change GET to POST</li>
 		<li>Under Enter Request URL add the following...  <b>https://YOUR-SEARCH-SERVICE-NAME.search.windows.net/indexes?api-version=2019-05-06</b>.</li>
@@ -76,7 +76,7 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
 		<li>Click Send and you should see the properties of your new skillset under the Response section of Postman.</li>
 	</ol
   </li>
-  <li>Finally we are going to create and run the Indexer.  The settings in the JSON for this particular example are set to run once, which will run immediately after creation.  Click <b>+New | Request</b>.  Under Request name type <b>POST indexer</b> and add it to your new custom collection/folder.</li>
+  <li>Finally we are going to create and run the Indexer.  The settings in the JSON for this particular example are set to run once, which will run immediately after creation.  Click <b>+New | Request</b>, under Request name type <b>POST indexer</b> and add it to your new custom collection/folder.</li>
 	<ol>
 		<li>Change GET to POST</li>
 		<li>Under Enter Request URL add the following...  <b>https://YOUR-SEARCH-SERVICE-NAME.search.windows.net/indexes?api-version=2019-05-06</b>.</li>
@@ -89,11 +89,27 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
 		<li>Click Send and you should see the properties of your new indexer under the Response section of Postman.</li>
 	</ol>
   </li>
-  <li>Next, go into the Azure Portal and check the status of your indexer.  You can see it in th Indexers tab of the Overview blade.  The status upon completion may depend on your Subscription and pricing levels.  For more details check out https://docs.microsoft.com/en-us/azure/search/search-sku-tier. </li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Next, go into the Azure Portal and check the status of your indexer.  You can see it in the Indexers tab of the Overview blade.  The status upon completion may depend on your Subscription and pricing levels.  For more details check out https://docs.microsoft.com/en-us/azure/search/search-sku-tier. </li>
+</ol>
+
+<b>Steps to creating the web application to utilize the Search Service.</b><br>
+Now we will utilize this repository to publish a search page in a web app so we can utilize the search service from a browser.
+<br>&nbsp;<br>
+<ol start="12">
+	<li>Clone/Download this repository and open it in Visual Studio</li>
+	<li>Under solution explorer, right click on the <b>CognitiveSearch.UI</b> and select <b>Set as Startup Project</b>. </li>
+	<li>Under solution explorer, double click <b>appsettings.json</b> to activate it in the window and change lines 8-14.</li>
+	<li>Next we need to create a SAS toekn to be used to access the files in Blob storage via the web application.  To create the SAS Token, go the Storage Account in the Azure Portal and click on the <b>Shared access signature</b> blade.  Fill out the proper fields and click <b>Generate SAS and connection string</b> button.</li>
+	<li>Copy the value in the SAS token field generated.</li>
+	<li>Under solution explorer, expand <b>Controllers</b> and double click on the <b>HomeController.cs</b> to activate it in the window and copy the SAS token value to line 109.</li>. 
+	<li> </li>
+	<li> </li>
+	<li> </li>
+	<li> </li>
+	<li> </li>
+	<li> </li>
+	<li> </li>
+	<li> </li>
+	<li> </li>
+	<li> </li>
 </ol>
