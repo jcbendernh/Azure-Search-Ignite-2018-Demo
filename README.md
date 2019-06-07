@@ -101,15 +101,11 @@ Now we will utilize this repository to publish a search page in a web app so we 
 	<li>Under solution explorer, double click <b>appsettings.json</b> to activate it in the window and change lines 8-14.</li>
 	<li>Next we need to create a SAS toekn to be used to access the files in Blob storage via the web application.  To create the SAS Token, go the Storage Account in the Azure Portal and click on the <b>Shared access signature</b> blade.  Fill out the proper fields and click <b>Generate SAS and connection string</b> button.</li>
 	<li>Copy the value in the SAS token field generated.</li>
-	<li>Under solution explorer, expand <b>Controllers</b> and double click on the <b>HomeController.cs</b> to activate it in the window and copy the SAS token value to line 109.</li>. 
-	<li>When </li>
-	<li> </li>
-	<li> </li>
-	<li> </li>
-	<li> </li>
-	<li> </li>
-	<li> </li>
-	<li> </li>
-	<li> </li>
-	<li> </li>
+	<li>Under solution explorer, expand <b>Controllers</b> and double click on the <b>HomeController.cs</b> to activate it in the window and copy the SAS token value to line 109.</li>
+	<li>It is time to Publish the project to Azure, under solution explorer, right click on the <b>CognitiveSearch.UI</b> and select <b>Publish</b> and fill out the approrpriate settings and save the Web App in the same resource group as your other Azure Search resources.</li>
+	<li>Open the new App Service in the azure portal and click on the Web URL in the properites blade to open the search page in the browser.</li>
+	<li>Type in a search term and click the find button to test.  If successful, you should see a result like below.
+	
+	![Alt text](/imgs/searchresults.gif?raw=true)
+	</li>
 </ol>
