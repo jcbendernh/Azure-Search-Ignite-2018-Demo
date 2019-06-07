@@ -62,7 +62,34 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
 		<li>Click Send and you should see the properties of your new data source under the Response section of Postman.</li>
 	</ol>
   </li>
-  <li></li>
+  <li>For this section, we are going to enable the Text and OCR skills. Click <b>+New | Request</b>.  Under Request name type <b>POST skillset</b> and add it to your new custom collection/folder.</li>
+	<ol>
+		<li>Change GET to POST</li>
+		<li>Under Enter Request URL add the following...  <b>https://YOUR-SEARCH-SERVICE-NAME.search.windows.net/indexes?api-version=2019-05-06</b>.</li>
+		<li>Under Headers add the following values...</li>
+	  		<ol>
+				<li> KEY = <b>Content-Type</b> | VALUE = <b>application/json</b> </li>
+				<li> KEY = <b>api-key</b> | VALUE = <b>YOUR-ADMIN-API-KEY</b><br> </li>
+			</ol>
+		<li>Under Body add the content from the <a target="_blank" href="https://github.com/jcbendernh/Azure-Search-Ignite-2018-Demo/blob/master/JSON/3-POST%20skillset.json">3-POST skillset.json</a> file and change the value on line 2.</li>
+		<li>For lines 68-72, this will depend if you setup a Cognitive Services subscription.  If not, change the section to <b>"cognitiveServices": null</b>. Otherwise, change the values in lines 70 &amp; 71.</li>
+		<li>Click Send and you should see the properties of your new skillset under the Response section of Postman.</li>
+	</ol
+  </li>
+  <li>Finally we are going to create and run the Indexer.  The settings in the JSON for this particular example are set to run once, which will run immediately after creation.  Click <b>+New | Request</b>.  Under Request name type <b>POST indexer</b> and add it to your new custom collection/folder.</li>
+	<ol>
+		<li>Change GET to POST</li>
+		<li>Under Enter Request URL add the following...  <b>https://YOUR-SEARCH-SERVICE-NAME.search.windows.net/indexes?api-version=2019-05-06</b>.</li>
+		<li>Under Headers add the following values...</li>
+	  		<ol>
+				<li> KEY = <b>Content-Type</b> | VALUE = <b>application/json</b> </li>
+				<li> KEY = <b>api-key</b> | VALUE = <b>YOUR-ADMIN-API-KEY</b><br> </li>
+			</ol>
+		<li>Under Body add the content from the <a target="_blank" href="https://github.com/jcbendernh/Azure-Search-Ignite-2018-Demo/blob/master/JSON/4-POST%20indexer.json">4-POST indexer.json</a> file and change the values on line 2,4,5 &amp; 6</li>
+		<li>Click Send and you should see the properties of your new indexer under the Response section of Postman.</li>
+	</ol>
+  </li>
+  <li>Next, go into the Azure Portal and check the status of your indexer.  You can see it in th Indexers tab of the Overview blade.  The status upon completion may depend on your Subscription and pricing levels.  For more details check out https://docs.microsoft.com/en-us/azure/search/search-sku-tier. </li>
   <li></li>
   <li></li>
   <li></li>
