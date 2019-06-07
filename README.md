@@ -92,9 +92,9 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
   <li>Next, go into the Azure Portal and check the status of your indexer.  You can see it in the Indexers tab of the Overview blade.  The status upon completion may depend on your Subscription and pricing levels.  For more details check out https://docs.microsoft.com/en-us/azure/search/search-sku-tier. </li>
 </ol>
 
-<b>Steps to creating the web application to utilize the Search Service.</b><br>
+# Steps to creating the web application to utilize the Search Service.
 Now we will utilize this repository to publish a search page in a web app so we can utilize the search service from a browser.
-<br>&nbsp;<br>
+<br>
 <ol start="12">
 	<li>Clone/Download this repository and open it in Visual Studio</li>
 	<li>Under solution explorer, right click on the <b>CognitiveSearch.UI</b> and select <b>Set as Startup Project</b>. </li>
@@ -102,7 +102,7 @@ Now we will utilize this repository to publish a search page in a web app so we 
 	<li>Next we need to create a SAS toekn to be used to access the files in Blob storage via the web application.  To create the SAS Token, go the Storage Account in the Azure Portal and click on the <b>Shared access signature</b> blade.  Fill out the proper fields and click <b>Generate SAS and connection string</b> button.</li>
 	<li>Copy the value in the SAS token field generated.</li>
 	<li>Under solution explorer, expand <b>Controllers</b> and double click on the <b>HomeController.cs</b> to activate it in the window and copy the SAS token value to line 109.</li>. 
-	<li> </li>
+	<li>When </li>
 	<li> </li>
 	<li> </li>
 	<li> </li>
