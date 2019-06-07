@@ -1,6 +1,7 @@
 # Azure-Search-Ignite-2018-Demo
 This project can be used to build out a demo instance of Azure Search processing documents and images from an Azure Blob Storage container.  This is based on the template that 
 <a target="_blank" href="https://www.linkedin.com/in/luisecabrera/">Luis Cabrera-Cordon</a> featured at Ignite 2018. To view the session, go to https://youtu.be/Wh5Dt8wnEhg.  
+A special thanks to <a target="_blank" href="https://www.linkedin.com/in/rrossmsft/">Rich Ross</a> from the Philadelphia Microsoft Technology Center for his work on this initiative. 
 <br>&nbsp;<br>
 <b>Prerequisites</b>
 <br>&nbsp;<br>
