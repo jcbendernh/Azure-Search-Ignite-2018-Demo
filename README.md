@@ -97,14 +97,14 @@ Now we will utilize this repository to publish a search page in a web app so we 
 <br>
 <ol start="12">
 	<li>Clone/Download this repository and open it in Visual Studio</li>
-	<li>Under solution explorer, right click on the <b>CognitiveSearch.UI</b> and select <b>Set as Startup Project</b>. </li>
-	<li>Under solution explorer, double click <b>appsettings.json</b> to activate it in the window and change lines 8-14.</li>
+	<li>In the Solution Explorer, right click on the <b>CognitiveSearch.UI</b> and select <b>Set as Startup Project</b>. </li>
+	<li>In the Solution Explorer, double click <b>appsettings.json</b> to activate it in the window and change lines 8-14 and save the file.</li>
 	<li>Next we need to create a SAS toekn to be used to access the files in Blob storage via the web application.  To create the SAS Token, go the Storage Account in the Azure Portal and click on the <b>Shared access signature</b> blade.  Fill out the proper fields and click <b>Generate SAS and connection string</b> button.</li>
 	<li>Copy the value in the SAS token field generated.</li>
-	<li>Under solution explorer, expand <b>Controllers</b> and double click on the <b>HomeController.cs</b> to activate it in the window and copy the SAS token value to line 109.</li>
-	<li>It is time to Publish the project to Azure, under solution explorer, right click on the <b>CognitiveSearch.UI</b> and select <b>Publish</b> and fill out the approrpriate settings and save the Web App in the same resource group as your other Azure Search resources.</li>
-	<li>Open the new App Service in the azure portal and click on the Web URL in the properites blade to open the search page in the browser.</li>
-	<li>Type in a search term and click the find button to test.  If successful, you should see a result like below.
+	<li>Under Solution Explorer, expand <b>Controllers</b> and double click on the <b>HomeController.cs</b> to activate it in the window and copy the SAS token value to line 109 and save the file.</li>
+	<li>It is time to Publish the project to Azure, under Solution Explorer, right click on the <b>CognitiveSearch.UI</b> and select <b>Publish</b> and fill out the appropriate fields and save the Web App Service in the same resource group as your other Azure Search resources.</li>
+	<li>Open the new App Service in the azure portal and click on the Web URL in the properties blade to open the search page in the browser.</li>
+	<li>Type in a search term and click the find button to test.  If successful, you should see results like below and you can drill in and search on specific documents.
 	
 ![Alt text](/imgs/searchresults.gif?raw=true)
 	</li>
