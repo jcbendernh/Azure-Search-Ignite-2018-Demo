@@ -106,6 +106,6 @@ Now we will utilize this repository to publish a search page in a web app so we 
 	<li>Open the new App Service in the azure portal and click on the Web URL in the properites blade to open the search page in the browser.</li>
 	<li>Type in a search term and click the find button to test.  If successful, you should see a result like below.
 	
-	![Alt text](/imgs/searchresults.gif?raw=true)
+![Alt text](/imgs/searchresults.gif?raw=true)
 	</li>
 </ol>
