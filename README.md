@@ -66,8 +66,8 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
   </li>
   <li>For this section, we are going to enable the Text and OCR skills. Click <b>+New | Request</b>.  Under Request name type <b>POST skillset</b> and add it to your new custom collection/folder.</li>
 	<ol>
-		<li>Change GET to POST</li>
-		<li>Under Enter Request URL add the following...  <b>https://YOUR-SEARCH-SERVICE-NAME.search.windows.net/indexes?api-version=2019-05-06</b>.</li>
+		<li>Change GET to PUT</li>
+		<li>Under Enter Request URL add the following...  <b>https://YOUR-SEARCH-SERVICE-NAME.search.windows.net/skillsets/<your-new-skillset-name>?api-version=2019-05-06</b>.</li>
 		<li>Under Headers add the following values...</li>
 	  		<ol>
 				<li> KEY = <b>Content-Type</b> | VALUE = <b>application/json</b> </li>
@@ -80,8 +80,8 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
   </li>
   <li>Finally we are going to create and run the Indexer.  The settings in the JSON for this particular example are set to run once, which will run immediately after creation.  Click <b>+New | Request</b>, under Request name type <b>POST indexer</b> and add it to your new custom collection/folder.</li>
 	<ol>
-		<li>Change GET to POST</li>
-		<li>Under Enter Request URL add the following...  <b>https://YOUR-SEARCH-SERVICE-NAME.search.windows.net/indexes?api-version=2019-05-06</b>.</li>
+		<li>Change GET to PUT</li>
+		<li>Under Enter Request URL add the following...  <b>https://YOUR-SEARCH-SERVICE-NAME.search.windows.net/indexers/<your-new-indexer-name>?api-version=2019-05-06</b>.</li>
 		<li>Under Headers add the following values...</li>
 	  		<ol>
 				<li> KEY = <b>Content-Type</b> | VALUE = <b>application/json</b> </li>
