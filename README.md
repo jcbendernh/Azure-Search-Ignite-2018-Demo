@@ -32,7 +32,7 @@ My instructions below are based on the <a target="_blank" href="https://docs.mic
   <li>Open Postman and click <b>+New | Request</b>.  Under Request name type <b>POST data source</b> and create a custom collection/folder to add it to.</li>
 	<ol>
 		<li>Change GET to POST</li>
-		<li>Under Enter Request URL add the following...  <b>https://YOUR-SEARCH-SERVICE-NAME.search.windows.net/indexes?api-version=2019-05-06</b>.</li>
+		<li>Under Enter Request URL add the following...  <b>https://YOUR-SEARCH-SERVICE-NAME.search.windows.net/datasources?api-version=2019-05-06</b>.</li>
 		<li>Under Headers add the following values...</li>
 	  		<ol>
 				<li> KEY = <b>Content-Type</b> | VALUE = <b>application/json</b> </li>
